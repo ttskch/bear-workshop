@@ -33,6 +33,8 @@ class AppModule extends AbstractModule
     {
         $this->install(new StandardPackageModule('Koriym\Work', $this->context, dirname(dirname(__DIR__))));
 
+        $this->bind('Psr\Log\LoggerInterface')->toProvider('Koriym\Work\Module\Provider\MonologLoggerProvider');
+
         // override module
         // $this->install(new SmartyModule($this));
 
