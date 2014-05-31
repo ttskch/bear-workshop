@@ -22,7 +22,7 @@ class Add extends ResourceObject
     {
         $this['result'] = $a + $b;
 
-        $this->logger->debug($this['result']);
+        $this->logger->debug(sprintf('%d + %d = %d', $a, $b, $this['result']));
 
         return $this;
     }
