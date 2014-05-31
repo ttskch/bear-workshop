@@ -12,7 +12,7 @@ class Add extends ResourceObject
     private $logger;
 
     /**
-     * @inject
+     * @Inject
      */
     public function __construct(LoggerInterface $logger)
     {
