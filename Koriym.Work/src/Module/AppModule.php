@@ -3,7 +3,6 @@
 namespace Koriym\Work\Module;
 
 use BEAR\Package\Module\Package\StandardPackageModule;
-use Koriym\Work\Interceptor\BenchMarker;
 use Ray\Di\AbstractModule;
 use Ray\Di\Di\Inject;
 use Ray\Di\Di\Named;
