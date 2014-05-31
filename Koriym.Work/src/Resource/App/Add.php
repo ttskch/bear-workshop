@@ -5,6 +5,7 @@ namespace Koriym\Work\Resource\App;
 use BEAR\Resource\ResourceObject;
 use Psr\Log\LoggerInterface;
 use Ray\Di\Di\Inject;
+use Koriym\Work\Annotation\BenchMark;
 
 class Add extends ResourceObject
 {
@@ -18,6 +19,9 @@ class Add extends ResourceObject
         $this->logger = $logger;
     }
 
+    /**
+     * @BenchMark
+     */
     public function onGet($a, $b)
     {
         $this['result'] = $a + $b;

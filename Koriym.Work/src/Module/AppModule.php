@@ -36,7 +36,7 @@ class AppModule extends AbstractModule
 
         $this->bind('Psr\Log\LoggerInterface')->toProvider('Koriym\Work\Module\Provider\MonologLoggerProvider');
 
-        $this->bindInterceptor($this->matcher->startsWith('Koriym\Work\Resource\App\Add'), $this->matcher->any(), [new BenchMarker()]);
+        $this->bindInterceptor($this->matcher->any(), $this->matcher->annotatedWith('Koriym\Work\Annotation\BenchMark'), [new BenchMarker()]);
 
         // override module
         // $this->install(new SmartyModule($this));
