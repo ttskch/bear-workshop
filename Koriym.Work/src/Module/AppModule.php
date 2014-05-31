@@ -3,6 +3,7 @@
 namespace Koriym\Work\Module;
 
 use BEAR\Package\Module\Package\StandardPackageModule;
+use Koriym\Work\Interceptor\BenchMarker;
 use Ray\Di\AbstractModule;
 use Ray\Di\Di\Inject;
 use Ray\Di\Di\Named;
@@ -34,6 +35,8 @@ class AppModule extends AbstractModule
         $this->install(new StandardPackageModule('Koriym\Work', $this->context, dirname(dirname(__DIR__))));
 
         $this->bind('Psr\Log\LoggerInterface')->toProvider('Koriym\Work\Module\Provider\MonologLoggerProvider');
+
+        $this->bindInterceptor($this->matcher->startsWith('Koriym\Work\Resource\App\Add'), $this->matcher->any(), [new BenchMarker()]);
 
         // override module
         // $this->install(new SmartyModule($this));
