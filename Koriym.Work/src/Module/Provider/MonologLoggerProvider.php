@@ -17,7 +17,7 @@ class MonologLoggerProvider implements ProviderInterface
     public function get()
     {
         $log = new Logger('monolog');
-        $log->pushHandler(new StreamHandler(__DIR__ . '/../../../logs/debug.log', Logger::DEBUG));
+        $log->pushHandler(new StreamHandler(__DIR__ . '/../../../var/log/debug.log', Logger::DEBUG));
         return $log;
     }
 }
