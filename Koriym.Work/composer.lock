@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1ac8d6ee4e57daa50331776c20e18eeb",
+    "hash": "1ef049993446a1387b122ff3f55d45fb",
     "packages": [
         {
             "name": "any/serializer",
@@ -1717,16 +1717,16 @@
         },
         {
             "name": "ray/di",
-            "version": "1.3.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koriym/Ray.Di.git",
-                "reference": "059162acca245aa2056747f9e578a095ac8ba35c"
+                "reference": "247450fb697e7da3a93d3b4fea57dfbe2930b3da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koriym/Ray.Di/zipball/059162acca245aa2056747f9e578a095ac8ba35c",
-                "reference": "059162acca245aa2056747f9e578a095ac8ba35c",
+                "url": "https://api.github.com/repos/koriym/Ray.Di/zipball/247450fb697e7da3a93d3b4fea57dfbe2930b3da",
+                "reference": "247450fb697e7da3a93d3b4fea57dfbe2930b3da",
                 "shasum": ""
             },
             "require": {
@@ -1756,7 +1756,7 @@
                 {
                     "name": "Akihito Koriyama",
                     "email": "akihito.koriyama@gmail.com",
-                    "homepage": "https://github.com/koriym",
+                    "homepage": "http://www.kumasystem.com",
                     "role": "Lead"
                 },
                 {
@@ -1774,7 +1774,7 @@
                 "guice",
                 "jsr"
             ],
-            "time": "2014-05-27 10:52:05"
+            "time": "2014-06-01 19:06:56"
         },
         {
             "name": "symfony/http-foundation",
@@ -3224,6 +3224,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "ray/di": 20,
         "bear/dev-package": 20
     },
     "platform": [],
